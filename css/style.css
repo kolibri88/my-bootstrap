@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+}
+.col, .col-2, .col-3, .col-4, .col-6 {
+    border: 3px solid rgb(255, 255, 255);
+    height: 200px;
+    border-radius: 50px;
+}
+/* 1 квадрат */
+    .first-square {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    background-image: linear-gradient(125deg,#1E90FF,#008080,#3CB371,#48D1CC,#9370DB,#DDA0DD,#BA55D3,#B22222);
+    background-size: 400% 400%;
+    animation: bganimation 14s infinite;
+    
+  }
+  .first-square p {
+    color: white;
+    text-align: center;
+    margin: 85px 0;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 22px;
+  }
+  @keyframes bganimation{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
